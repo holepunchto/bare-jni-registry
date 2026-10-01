@@ -1,6 +1,6 @@
 {
   "name": "bare-jni-registry",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A registry of live Java objects, shared by Bare addons",
   "exports": {
     "./package": "./package.json",
