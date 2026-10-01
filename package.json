@@ -1,0 +1,33 @@
+{
+  "name": "bare-jni-registry",
+  "version": "0.0.0",
+  "description": "A registry of live Java objects, shared by Bare addons",
+  "exports": {
+    "./package": "./package.json",
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./registry.h": "./lib/registry.h"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib"
+  ],
+  "scripts": {
+    "format": "prettier --write . && lunte --fix",
+    "lint": "prettier --check . && lunte"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/bare-jni-registry.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "lunte": "^1.8.0",
+    "prettier": "^3.4.1",
+    "prettier-config-holepunch": "^2.0.0"
+  }
+}
